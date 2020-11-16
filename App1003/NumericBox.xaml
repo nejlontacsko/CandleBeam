@@ -1,0 +1,17 @@
+﻿<UserControl
+    x:Class="App1003.NumericBox"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1003"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
+    <Grid Width="62" Height="20">
+        <TextBox x:Name="txtBox" HorizontalAlignment="Left" Text="0" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="10" Height="20" Padding="3,3,3,3" Width="40" InputScope="Number" PointerWheelChanged="TxtBox_PointerWheelChanged" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ScrollViewer.VerticalScrollBarVisibility="Disabled" RequestedTheme="Default" FontFamily="Consolas" TextChanged="TxtBox_TextChanged"/>
+        <Button x:Name="plusButton" Width="22" Height="10" VerticalAlignment="Top" Margin="40,0,0,0" Content="+" FontSize="8" FontFamily="Consolas" Padding="0,-3,0,0" FontWeight="Bold" Click="addValue" Background="#33FBC8C8" />
+        <Button x:Name="minusButton" Width="22" Height="10" VerticalAlignment="Top" Margin="40,10,0,0" Content="-" FontSize="8" FontFamily="Consolas" Padding="0,-3,0,0" FontWeight="Bold" Click="subValue" />
+    </Grid>
+</UserControl>

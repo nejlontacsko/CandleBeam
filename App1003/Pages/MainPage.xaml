@@ -1,0 +1,34 @@
+﻿<Page
+    x:Class="App1003.Pages.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:App1003"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    >
+
+    <Grid>
+        <NavigationView Content="NavigationView" SelectionChanged="NavigationView_SelectionChanged" x:Name="navi" >
+            <NavigationView.MenuItems>
+                <NavigationViewItemHeader Content="DMX" />
+                <NavigationViewItem Content="Mixer" Icon="Sort" />
+                <NavigationViewItem Content="Buttons" Icon="SelectAll" />
+                <NavigationViewItem Content="Cuelist" Icon="AllApps" />
+                <NavigationViewItemSeparator />
+                <NavigationViewItemHeader Content="ILDA" />
+                <NavigationViewItem Content="DACs" Icon="Camera" />
+                <NavigationViewItem Content="Figures" Icon="Emoji" />
+                <NavigationViewItemSeparator />
+                <NavigationViewItemHeader Content="MIDI" />
+                <NavigationViewItem Content="Controllers" Icon="MusicInfo" />
+                <NavigationViewItemSeparator />
+                <NavigationViewItemHeader Content="Networking" />
+                <NavigationViewItem Content="Devices" Icon="Pictures" />
+                <NavigationViewItem Content="Topography" Icon="Shuffle" />
+                <NavigationViewItem Content="Protocol" Icon="MapDrive" />
+            </NavigationView.MenuItems>
+        </NavigationView>
+    </Grid>
+</Page>
